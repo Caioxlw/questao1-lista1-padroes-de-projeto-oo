@@ -52,9 +52,6 @@ classDiagram
         -model: WebSearchModel
         +Snooper(model: WebSearchModel)
     }
-    class Main {
-        +main(args: String[]) void
-    }
 
     QueryFilter <|.. FriendQueryFilter
     QueryFilter <|.. LongQueryFilter
@@ -65,8 +62,6 @@ classDiagram
     RegisteredQueryObserver o-- QueryFilter
     
     Snooper --> WebSearchModel
-    Main --> WebSearchModel
-    Main --> Snooper
 ```
 
 ## 🚀 Como Executar
